@@ -9,11 +9,11 @@ char = %c
 
 int main(){
 //====================================Toan tu = Operator================================================//
-	//Toan tu toan hoc = Arithemetic Operator: +, -, *, /, %(chia co so du)
+	/*Toan tu toan hoc = Arithemetic Operator: +, -, *, /, %(chia co so du)
 	//Toan tu nay con duoc goi la toan tu 2 ngoi, la 2 so can thuc hien phep tinh (a+b)
 	//Toan tu dac biet ma ta da su dung ngay tu dau bai: dau "=", toan tu gan = assignment operator
 		//Vd: a = b. Khong phai so sanh a va b bang nhau, ma la may tinh se lay gia tri cua bien b gan cho bien a
-	
+	*/
 	int h = 300, i = 200;
 	int tong = h + i;
 	int hieu = h - i;
@@ -101,7 +101,10 @@ int main(){
 	printf("Kiem tra a < b: %d\n", kq);
 	
 	int s = 200, t = 200;
-	int kq_1 = s <= t;
-	printf("Kiem tra s <= t: %d", kq_1); //dung mot ve thu hai, ve bang
-	return 2;	
+	int kq_1 = s <= t; //lieu s co <= t khong?
+	printf("Kiem tra s <= t: %d, ", kq_1); //dung mot truong hop thu hai, dau bang
+	int kq_2 = s != t; //lieu s co khac t khong?
+	printf("Kiem tra s khac t: %d, ", kq_2);
+	
+	return 2;
 }
